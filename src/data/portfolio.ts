@@ -358,6 +358,22 @@ export const portfolioData = {
       skills: ['DevOps'],
       description: 'Foundational certification covering DevOps concepts and practices.',
     },
+    {
+      title: 'Coursera Certificate',
+      issuer: 'Coursera',
+      credentialUrl:
+        'https://www.coursera.org/account/accomplishments/verify/VF9IA7X65GYO?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course',
+    },
+    {
+      title: 'SQL',
+      issuer: 'Coursera',
+      credentialUrl: 'https://coursera.org/share/f39e7de4ce4ed74bd878709343129b64',
+    },
+    {
+      title: 'Python Data Analytics',
+      issuer: 'Coursera',
+      credentialUrl: 'https://coursera.org/share/580e52c109a19857b343f19635a257c5',
+    },
   ] satisfies Certification[],
 
   achievements: [
