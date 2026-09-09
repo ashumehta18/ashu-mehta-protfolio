@@ -6,7 +6,7 @@ import { Modal } from './Modal'
 import { PlaceholderLink } from './PlaceholderLink'
 import { ProjectCard } from './ProjectCard'
 import { SectionHeading } from './SectionHeading'
-import { ExternalLink } from 'lucide-react'
+import { ExternalLink } from 'lucide-
 import { GithubIcon } from './SocialIcons'
 
 type Filter = 'All' | ProjectCategory

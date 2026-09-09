@@ -374,6 +374,27 @@ export const portfolioData = {
       issuer: 'Coursera',
       credentialUrl: 'https://coursera.org/share/580e52c109a19857b343f19635a257c5',
     },
+    {
+      title: 'Machine Learning',
+      issuer: 'Coursera',
+      credentialUrl: 'https://coursera.org/share/44529eedc50622dc3e60ddfff40311d6',
+      skills: ['Machine Learning', 'AI', 'Data Science'],
+      description: 'Completed a Coursera machine learning course covering core ML concepts and practical implementation.',
+    },
+    {
+      title: 'Git and GitHub',
+      issuer: 'Coursera',
+      credentialUrl: 'https://coursera.org/share/8873f8c6128e96a45ad55ca55164f348',
+      skills: ['Git', 'GitHub', 'Version Control'],
+      description: 'Completed a Coursera course covering Git fundamentals and GitHub workflows for collaboration and version control.',
+    },
+    {
+      title: 'DevOps',
+      issuer: 'Coursera',
+      credentialUrl: 'https://coursera.org/share/fe95a89dbc829928d1773979afc3a035',
+      skills: ['DevOps', 'CI/CD', 'Automation'],
+      description: 'Completed a Coursera DevOps course focusing on automation, delivery workflows, and modern development practices.',
+    },
   ] satisfies Certification[],
 
   achievements: [
