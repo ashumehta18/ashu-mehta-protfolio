@@ -13,7 +13,13 @@ export function ProjectCard({ project, onOpen }: ProjectCardProps) {
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-surface transition hover:-translate-y-1 hover:border-accent/50">
       <div className="relative min-h-[180px] border-b border-line bg-surface-2 p-4" aria-hidden="true">
-        {project.id === 'eventra' ? <EventraMock /> : <FreshRushMock />}
+        {project.id === 'eventra' ? (
+          <EventraMock />
+        ) : project.id === 'freshrush' ? (
+          <FreshRushMock />
+        ) : (
+          <CampusIQMock />
+        )}
       </div>
       <div className="flex flex-1 flex-col p-5 sm:p-6">
         <p className="font-mono text-xs tracking-widest text-accent uppercase">{project.subtitle}</p>
@@ -117,6 +123,45 @@ function FreshRushMock() {
             <p className="text-sm text-ink">{plan}</p>
           </div>
         ))}
+      </div>
+    </div>
+  )
+}
+
+function CampusIQMock() {
+  return (
+    <div className="grid h-full grid-cols-[0.8fr_1.2fr] gap-3">
+      <div className="rounded-xl border border-line bg-canvas p-3">
+        <div className="h-2 w-20 rounded bg-accent/50" />
+        <div className="mt-4 space-y-2">
+          {['Overview', 'Attendance', 'Assignments', 'Marks'].map((item, index) => (
+            <div
+              key={item}
+              className={cn(
+                'rounded-md border px-2 py-1.5 font-mono text-[10px]',
+                index === 0 ? 'border-accent/40 bg-accent/10 text-ink' : 'border-line text-muted',
+              )}
+            >
+              {item}
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="rounded-xl border border-line bg-canvas p-3">
+        <div className="flex items-center justify-between">
+          <p className="font-mono text-[10px] text-muted">Academic overview</p>
+          <span className="h-2 w-2 rounded-full bg-accent" />
+        </div>
+        <div className="mt-4 grid grid-cols-2 gap-2">
+          <div className="rounded-lg border border-line bg-surface p-2">
+            <p className="font-mono text-[10px] text-muted">attendance</p>
+            <p className="mt-1 text-lg text-ink">86%</p>
+          </div>
+          <div className="rounded-lg border border-line bg-surface p-2">
+            <p className="font-mono text-[10px] text-muted">subjects</p>
+            <p className="mt-1 text-lg text-ink">06</p>
+          </div>
+        </div>
       </div>
     </div>
   )

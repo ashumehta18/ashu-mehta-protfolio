@@ -75,9 +75,9 @@ export interface EducationItem {
 }
 
 export const socialPlaceholders = {
-  linkedinUrl: '#',
-  githubUrl: '#',
-  leetcodeUrl: '#',
+  linkedinUrl: 'https://www.linkedin.com/in/ashu-mehta-a664052b2/',
+  githubUrl: 'https://github.com/ashumehta18',
+  leetcodeUrl: 'https://leetcode.com/u/Ashu_129/',
   resumeUrl: '#',
 } as const
 
@@ -117,7 +117,7 @@ export const portfolioData = {
   },
 
   stats: [
-    { value: '2', label: 'Featured full-stack projects' },
+    { value: '3', label: 'Featured full-stack projects' },
     { value: 'MERN', label: 'Primary development stack' },
     { value: '2024', label: 'Hackathon finalist' },
     { value: '2027', label: 'Expected graduation' },
@@ -259,7 +259,7 @@ export const portfolioData = {
         'Supporting a reliable booking and check-in workflow across users, organizers, payments, and QR-based verification.',
       engineeringResponse:
         'Separated routing and validation concerns, added secure endpoints, optimized database access, and designed organizer-facing analytics.',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/ashumehta18/FreshRush',
       liveUrl: '#',
       featured: true,
     },
@@ -298,6 +298,39 @@ export const portfolioData = {
         'Managing shared carts and reliable payment workflows for multiple users.',
       engineeringResponse:
         'Used session-based group ordering, backend payment verification, idempotent validation, centralized error handling, and structured order lifecycle APIs.',
+      githubUrl: 'https://github.com/ashumehta18/CampusIQ',
+      liveUrl: '#',
+      featured: true,
+    },
+    {
+      id: 'campusiq',
+      name: 'CampusIQ',
+      subtitle: 'University Academic Management Platform',
+      description:
+        'A production-style MERN platform for managing students, faculty, subjects, attendance, assessments, assignments, notifications, and academic analytics.',
+      role: 'Full-stack development',
+      technologies: ['MERN', 'React Router', 'Axios', 'JWT', 'MongoDB', 'Recharts'],
+      highlights: [
+        'Designed role-based dashboards for students, faculty, and administrators.',
+        'Structured REST APIs with authentication, authorization, validation, and centralized error handling.',
+        'Modeled academic relationships across departments, subjects, enrollments, attendance, marks, and submissions.',
+        'Derived attendance percentages from attendance records instead of storing unreliable totals.',
+        'Added transparent rule-based attendance and performance alerts for academic monitoring.',
+        'Kept a clean service boundary for future ML integration without implementing predictions yet.',
+      ],
+      tags: [
+        'Role-based access',
+        'Academic analytics',
+        'Attendance tracking',
+        'REST APIs',
+        'MongoDB relationships',
+        'Future ML-ready architecture',
+      ],
+      categories: ['Full Stack', 'Backend', 'APIs', 'Cloud'],
+      challenge:
+        'Building a maintainable academic system that supports three user roles without mixing current rule-based analytics with future ML predictions.',
+      engineeringResponse:
+        'Separated frontend, API, database, and service responsibilities, with reusable React views, protected Express routes, referenced MongoDB models, and an explicit future prediction-service boundary.',
       githubUrl: '#',
       liveUrl: '#',
       featured: true,

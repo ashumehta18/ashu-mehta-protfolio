@@ -28,7 +28,7 @@ export function Projects() {
         <SectionHeading
           eyebrow="Projects"
           title="Engineering work with real product workflows."
-          description="Two featured full-stack applications. Links stay disabled until real GitHub and demo URLs are added in src/data/portfolio.ts."
+          description="Three featured full-stack applications. GitHub repositories are available for FreshRush and CampusIQ; live demo links remain disabled until deployed URLs are added."
         />
         <div className="mb-8 flex flex-wrap gap-2" role="group" aria-label="Filter projects">
           {portfolioData.projectFilters.map((item) => (
