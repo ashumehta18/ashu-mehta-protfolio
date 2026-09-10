@@ -19,33 +19,35 @@
 
 :root {
   color-scheme: light;
-  --canvas: #f5f1e8;
-  --surface: #fffdf8;
-  --surface-2: #ebe7dc;
-  --ink: #1d2b25;
-  --muted: #5c6860;
-  --line: rgba(29, 43, 37, 0.14);
+  --canvas: #f6f8f7;
+  --surface: #ffffff;
+  --surface-2: #edf3f2;
+  --ink: #16252d;
+  --muted: #54656d;
+  --line: rgba(22, 37, 45, 0.12);
   --accent: #0f766e;
-  --accent-2: #c05a46;
-  --glow: rgba(15, 118, 110, 0.16);
+  --accent-2: #f59e0b;
+  --glow: rgba(15, 118, 110, 0.12);
 }
 
 .dark {
   color-scheme: dark;
-  --canvas: #17221d;
-  --surface: #213029;
-  --surface-2: #2a3a31;
-  --ink: #f4f0e7;
-  --muted: #b4bdb4;
-  --line: rgba(244, 240, 231, 0.16);
-  --accent: #5fc2af;
-  --accent-2: #e38a72;
-  --glow: rgba(95, 194, 175, 0.18);
+  --canvas: #07151e;
+  --surface: #0f1f2d;
+  --surface-2: #122a39;
+  --ink: #ecf4f8;
+  --muted: #a7b7c2;
+  --line: rgba(236, 244, 248, 0.12);
+  --accent: #5eead4;
+  --accent-2: #fbbf24;
+  --glow: rgba(94, 234, 212, 0.18);
 }
 
 html {
   scroll-behavior: smooth;
-  background: var(--canvas);
+  background:
+    radial-gradient(circle at top, color-mix(in srgb, var(--accent) 10%, transparent), transparent 35%),
+    var(--canvas);
   color: var(--ink);
 }
 

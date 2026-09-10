@@ -6,7 +6,7 @@ import { Modal } from './Modal'
 import { PlaceholderLink } from './PlaceholderLink'
 import { ProjectCard } from './ProjectCard'
 import { SectionHeading } from './SectionHeading'
-import { ExternalLink } from 'lucide-
+import { ExternalLink } from 'lucide-react'
 import { GithubIcon } from './SocialIcons'
 
 type Filter = 'All' | ProjectCategory
@@ -27,8 +27,8 @@ export function Projects() {
       <div className="container-page">
         <SectionHeading
           eyebrow="Projects"
-          title="Engineering work with real product workflows."
-          description="Three featured full-stack applications. GitHub repositories are available for FreshRush and CampusIQ; live demo links remain disabled until deployed URLs are added."
+          title="Product-focused engineering work with real-world impact."
+          description="Three featured full-stack projects built around practical workflows, secure systems, and user-centered product thinking. GitHub repositories are available for FreshRush and CampusIQ; live demo links remain disabled until deployed URLs are added."
         />
         <div className="mb-8 flex flex-wrap gap-2" role="group" aria-label="Filter projects">
           {portfolioData.projectFilters.map((item) => (
